@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "apiTest": "mocha --recursive 'tests/apiTesting/test/test.js'  --timeout 100000 --reporter mochawesome"
+    "test_api": "mocha '../protractorPageObject/tests/apiTesting/test/*.spec.js'  --timeout 100000 --reporter mochawesome"
   },
   "repository": {
     "type": "git",

@@ -1,16 +1,16 @@
 const mocha = require('mocha');
 const should = require('should');
 const supertest = require('supertest');
-import * as apiHelper from "../helper/api_helpers";
-import * as validator from "../helper/validators";
-
+const validator = require('../helper/validators.js');
+const apiHelper = require('../helper/api_helpers.js');
 const apiEndPointHelper = require("../helper/api_endpoints");
+
 let baseUrl = apiEndPointHelper.baseUrl;
 let apiEndPoint = apiEndPointHelper.myEndPoint;
 
-describe('Superhero Api Suite', function () {
+describe('Users', function () {
     describe('GET Request', function () {
-        it('Should Get Superhero', async function () {
+        it('Should Get all the users from request', async function () {
             let res = await apiHelper.sendGETRequest(baseUrl, apiEndPoint + apiEndPoint);
             console.log(res.body);
             res.status.should.equal(200);
