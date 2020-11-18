@@ -1,3 +1,3 @@
 
-exports.baseUrl = 'https://jsonplaceholder.typicode.com/users';
-exports.myEndPoint = 'users/';
+exports.baseUrl = 'https://jsonplaceholder.typicode.com/';
+exports.myEndPoint = 'users';

@@ -11,7 +11,7 @@ let apiEndPoint = apiEndPointHelper.myEndPoint;
 describe('Users', function () {
     describe('GET Request', function () {
         it('Should Get all the users from request', async function () {
-            let res = await apiHelper.sendGETRequest(baseUrl, apiEndPoint + apiEndPoint);
+            let res = await apiHelper.sendGETRequest(baseUrl, apiEndPoint );
             console.log(res.body);
             res.status.should.equal(200);
             validator.dataTypeValidator(res);
