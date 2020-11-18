@@ -6,7 +6,7 @@ class LandingPage {
 
     //Clicks the contact header button
     async clickContactLink(){
-        await this.element(by.css('[data-gtm-category="header-contact-cta"]')).click();
+        await element(by.css('[data-gtm-category="header-contact-cta"]')).click();
     }
 
 }
