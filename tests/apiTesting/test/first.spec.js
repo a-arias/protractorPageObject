@@ -1,7 +1,6 @@
 const mocha = require('mocha');
 const should = require('should');
 const supertest = require('supertest');
-const validator = require('../helper/validators.js');
 const apiHelper = require('../helper/api_helpers.js');
 const apiEndPointHelper = require("../helper/api_endpoints");
 

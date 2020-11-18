@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test_api": "mocha '../protractorPageObject/tests/apiTesting/test/*.spec.js'  --timeout 100000 --reporter mochawesome"
+    "test": "protractor protractor.conf.js",
+    "test_api": "mocha ../protractorPageObject/tests/apiTesting/test/*.spec.js"
   },
   "repository": {
     "type": "git",
